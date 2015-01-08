@@ -12,72 +12,75 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
  implied.  See the License for the specific language governing
  permissions and limitations under the License.
---> 
+-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Qualified Responder Search</title>
-		<link href='css/bootstrap.min.css' rel='stylesheet' type='text/css' media="screen"/>
-		<link href='css/style.css' rel='stylesheet' type='text/css' media="screen"/>
-		<script src="js/jquery-1.11.1.js"></script>
-		<script type='text/javascript' src='js/app.js'></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-					<h2>Qualified Responders</h2>
-					<form class="form-search form-horizontal clearfix">
-						<div class="search pull-left">
-							<div class="input-append">
-								<input type="text" class="span2 search-query" name="name" placeholder="Name…">
-								<button type="button" class="btn">Search</button>
-							</div>
-						</div>
-						<div class="filters">
-							<div class="control-group pull-left">
-								<label class="control-label" for="occupation-filter">Occupation:</label>
-								<div class="controls">
-									<select id="occupation-filter" class="span2">
-										<option>All</option>
-										<option>Physician</option>
-										<option>Respiratory Therapist</option>
-										<option>Veterinarian</option>
-									</select>
-								</div>
-							</div>
-							<div class="control-group pull-left">
-								<label class="control-label" for="availability-filter">Availability:</label>
-								<div class="controls">
-									<select id="availability-filter" class="span2">
-										<option>All</option>
-										<option>Available</option>
-										<option>Not Available</option>
-										<option>Unknown</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</form>
-					<table id="responder_results" class="table table-striped">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Occupation</th>
-								<th>Location</th>
-								<th>Availability</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td colspan="4"><p class="no-results">Loading...</p></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</body>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Qualified Responder Search</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css' media="screen"/>
+    <link href='css/style.css' rel='stylesheet' type='text/css' media="screen"/>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script type='text/javascript' src='js/app.js'></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h2>Qualified Responders</h2>
+
+            <form class="form-search form-horizontal clearfix" action="#">
+                <div class="search pull-left">
+                    <div class="input-append">
+                        <input id="name-input" type="text" class="span2 input-value" name="name" placeholder="Name…">
+                        <button type="button" class="btn">Search</button>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="control-group pull-left">
+                        <label class="control-label" for="occupation-filter">Occupation:</label>
+
+                        <div class="controls">
+                            <select id="occupation-filter" class="span2 input-value">
+                                <option>All</option>
+                                <option>Physician</option>
+                                <option>Respiratory Therapist</option>
+                                <option>Veterinarian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group pull-left">
+                        <label class="control-label" for="availability-filter">Availability:</label>
+
+                        <div class="controls">
+                            <select id="availability-filter" class="span2 input-value">
+                                <option>All</option>
+                                <option>Available</option>
+                                <option>Not Available</option>
+                                <option>Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <table id="responder_results" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Location</th>
+                    <th>Availability</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td colspan="4"><p class="no-results">Loading...</p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
 </html>

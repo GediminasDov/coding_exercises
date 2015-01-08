@@ -14,12 +14,12 @@
  * governing permissions and limitations under the License.
  */
 
-QUnit.test( 'App JavaScript loaded.', function( assert ) {
-  assert.ok(typeof App.displayResults === 'function', 'Passed!' );
+QUnit.test('App JavaScript loaded.', function (assert) {
+    assert.ok(typeof App.displayResults === 'function', 'Passed!');
 });
-
-QUnit.test( 'Filtering test.', function( assert ) {
-  // @TODO A a test or two to verify your filtering functionality works.
-  // See http://api.qunitjs.com for more details on how to use QUnit.
-  assert.ok(false, 'Passed!' );
+QUnit.test('Filter: string "Baker" in "Christopher Baker" should contain (true)', function (assert) {
+    assert.ok(App._contains('Baker', 'Christopher Baker') === true, 'Return was true');
+});
+QUnit.test('Filter: string "Allan" in "Wendy Campbell" should not contain (false)', function (assert) {
+    assert.ok(App._contains('Allan', 'Wendy Campbell') === false, 'Return was false!');
 });

@@ -12,15 +12,85 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
  implied.  See the License for the specific language governing
  permissions and limitations under the License.
---> 
+-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Navigation Exercise</title>
-	</head>
-	<body>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Navigation Exercise</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="user">
+            Welcome, <strong>John Smith</strong> ( <a href="#">Preferences</a> | <a href="#">Log Out</a> )
+        </div>
+        <ul class="nav-icon a-right">
+            <li>
+                <a href="#">
+                    <i class="icon profile"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon messages"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav a-left">
+            <li>
+                <a href="#">
+                    Patients
+                </a>
+            </li>
+            <li>
+                <a class="active" href="#">
+                    Incidents
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Reports
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Property
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Locations
+                </a>
+            </li>
 
-	</body>
+        </ul>
+        <div class="clearfix"></div>
+    </nav>
+    <nav class="full-width">
+        <div class="sub-nav-bg full-width">
+            <div class="container">
+                <ul class="sub-nav">
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Groups</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+</header>
+</body>
 </html>
