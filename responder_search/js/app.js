@@ -159,7 +159,7 @@ var App = (function () {
     return {
         displayResults: displayResults,
         inputDataCollector: inputDataCollector,
-        _contains : _contains
+        _contains: _contains // Just for Qunit test
     };
 
 })();
